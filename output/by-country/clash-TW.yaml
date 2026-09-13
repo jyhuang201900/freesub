@@ -10,21 +10,16 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
+  sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
-  server: 35.229.136.113
-  port: 35412
+  server: 103.115.109.49
+  port: 443
   udp: true
-  type: vless
-  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
-    short-id: 0630b874d595
-  servername: www.amd.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'https:'
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaohe
   server: 104.199.134.231
   port: 28364
@@ -39,27 +34,6 @@ proxies:
   servername: www.sony.com
   client-fingerprint: random
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaohe
-  server: 35.221.158.209
-  port: 32981
-  udp: true
-  type: vless
-  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
-    short-id: 70f4b7a4c40636
-  servername: www.sony.com
-  client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
   server: 35.194.157.16
   port: 43450
   udp: true
@@ -71,8 +45,21 @@ proxies:
     public-key: HNPJBiUbqYVC3ylvu1GA7fCHLTaHO7S13Bex1nm0O1o
     short-id: e65d010354bdad73
   servername: www.amd.com
-  client-fingerprint: random
-- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaohe
+  server: 34.80.184.198
+  port: 44848
+  udp: true
+  type: vless
+  uuid: b0342e8a-a25e-4e30-b598-d9391b0df4c9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: w9vWLOHjl46krA8IEpGoPI9scTL0rFdjCtjdukJDciU
+    short-id: 2338740580a5de
+  servername: www.tesla.com
+  client-fingerprint: edge
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - xiaohe
   server: 34.81.129.171
   port: 34376
   udp: true
@@ -84,6 +71,19 @@ proxies:
     public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
     short-id: 8dbafb690450d8a9
   servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - xiaohe
+  server: 35.229.136.113
+  port: 35412
+  udp: true
+  type: vless
+  uuid: 5d3cbdb2-b82d-4078-82b8-5dd413cca82b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: eg6DfbLnWtz7PubkXRYvSuQx6QWIRxUsn4l7QEO3Cg4
+    short-id: 0630b874d595
+  servername: www.amd.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
