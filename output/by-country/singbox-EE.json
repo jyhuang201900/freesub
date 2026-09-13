@@ -4,17 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "94.183.170.135",
+      "server": "217.60.182.79",
       "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "94.183.170.135"
-        }
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "tls": {
+        "enabled": true,
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {
@@ -26,11 +24,17 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -39,7 +43,8 @@
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
       ]
     },
     {
@@ -47,7 +52,8 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
