@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.13.77
-  port: 443
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
+  server: 128.241.25.3
+  port: 30021
   udp: true
   type: vless
-  uuid: 4b21fbc7-00c2-4665-9788-02153832f9e5
+  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
   tls: true
-  servername: v2ray.aizgl.com
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /xray-ws
+    path: /@Marisa_kristi
     headers:
-      Host: v2ray.aizgl.com
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇯🇵 日本 (Japan) 01 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
