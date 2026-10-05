@@ -9,7 +9,7 @@ proxies:
   port: 2052
   udp: true
   type: vless
-  uuid: a2c57a6c-dacb-44d1-9055-fb42d4c888a5
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   network: ws
   ws-opts:
     path: /@BlueKnight_net--@BlueKnight_net
